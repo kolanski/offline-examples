@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Volume Control</title>
+</head>
+<body>
+  <h1>Volume Control</h1>
+  <input type="range" id="volumeSlider" min="0" max="1" step="0.01" value="0.5">
+  <script>
+    const slider = document.getElementById('volumeSlider');
+    slider.addEventListener('input', () => {
+      fetch(`/setVolume?value=${slider.value}`)
+        .then(response => response.text())
+        .then(data => console.log(data))
+        .catch(error => console.error('Error:', error));
+    });
+  </script>
+</body>
+</html>
