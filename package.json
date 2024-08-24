@@ -3,16 +3,18 @@
   "version": "1.0.0",
   "description": "Offline rendering examples at the command line with Node.js",
   "type": "module",
+  "browser": {
+    "crypto": false
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@elemaudio/core": "^2.0.0",
-    "@elemaudio/offline-renderer": "^2.0.0",
-    "minimist": "^1.2.6",
-    "spherical-harmonic-transform": "^0.1.1",
+    "@elemaudio/core": "^3.2.1",
+    "@elemaudio/offline-renderer": "^3.2.2",
+    "speaker": "^0.5.5",
     "wavefile": "^11.0.0"
   }
 }
