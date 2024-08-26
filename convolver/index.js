@@ -42,13 +42,6 @@ function processAudio() {
 }
 
 async function playSound() {
-
-
-
-
-
-  
-
   // Process audio continuously
   //setInterval(processAudio, 1000); // Adjust the interval as needed
   console.log("Sound is playing...");
